@@ -1,0 +1,143 @@
+.imgpoizon {
+    text-align: center;
+}
+
+
+/* a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: white;
+  } */
+
+.dewu {
+    color: white;
+    text-decoration: underline;
+}
+
+.dewu:hover {
+    color: white;
+}
+
+.dewu:active {
+    color: white;
+}
+
+.dewu[href]:after {
+    content: " (" attr(href) ")";
+}
+
+.dewu[href^="http://"],
+.dewu[href^="https://"] {
+    color: white;
+    text-decoration: underline;
+}
+
+.dewu[href^="http://"]:hover,
+.dewu[href^="https://"]:hover {
+    color: white;
+}
+
+.dewu[href^="http://"]:active,
+.dewu[href^="https://"]:active {
+    color: white;
+}
+
+.dewu[href^="http://"]:visited,
+.dewu[href^="https://"]:visited {
+    color: white;
+}
+
+.dewu[target="_blank"]:after {
+    content: "   (кликай)";
+}
+
+.dewu[target="_blank"]:link,
+.dewu[target="_blank"]:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+.dewu[target="_blank"]:hover {
+    color: white;
+}
+
+.dewu[target="_blank"]:active {
+    color: white;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(35, 40, 43);
+    font-weight: 500;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.imgpoizon {
+    text-align: center;
+}
+
+.dewu {
+    color: white;
+    text-decoration: underline;
+}
+
+.dewu:hover,
+.dewu:active {
+    color: white;
+}
+
+.dewu[href]:after {
+    content: " (" attr(href) ")";
+}
+
+.dewu[href^="http://"],
+.dewu[href^="https://"] {
+    color: white;
+}
+
+.dewu[href^="http://"]:hover,
+.dewu[href^="https://"]:hover {
+    color: white;
+}
+
+.dewu[href^="http://"]:active,
+.dewu[href^="https://"]:active {
+    color: white;
+}
+
+.dewu[href^="http://"]:visited,
+.dewu[href^="https://"]:visited {
+    color: white;
+}
+
+.dewu[target="_blank"]:after {
+    content: "   (кликай)";
+}
+
+.dewu[target="_blank"]:link,
+.dewu[target="_blank"]:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+.dewu[target="_blank"]:hover,
+.dewu[target="_blank"]:active {
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    .imgpoizon {}
+    .dewu {}
+}
+
+.imgpoizon img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IGC</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./script/index.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="header__logo"><img class="header__logo" src="./images/logo-qw2UymJGV-transformed.png" alt=""></a>
+        <div class="form">
+            <button class="form__button">
+            </button>
+            <input class="form__input" type="search" placeholder="Поиск товаров">
+        </div>
+        <nav class="header__nav">
+            <ul class="header__list">
+                <li class="header__item"><a class="header__link" href="./poizon.html">Как купить?</a></li>
+                <li class="header__item">
+                    <a class="header__link" href="#" id="deliveryLink">Доставка</a>
+                </li>
+
+                <div id="deliveryModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <ul>
+                            <li>Пункт 1</li>
+                            <li>Пункт 2</li>
+                            <li>Пункт 3</li>
+                        </ul>
+                    </div>
+                </div>
+                <script src="./script/delivery.js"></script>
+                <a class="header__link header__link_modal" href="#">Контакты</a>
+
+                <li class="header__item"><a class="header__link header__link_gradient" href="tel: 89999999999">Позвонить</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="modal" id="modal">
+        <div class="modal__content">
+            <div class="modal__header">
+                <h3 class="modal__title">Контакты</h3>
+                <a class="modal__close">&times;</a>
+            </div>
+            <div class="modal__body">
+                <p class="modal__phone">связь с нами tg: </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section>
+
+            <div class="main">
+                <div class="main__text">
+                    <h1 class="main__title">Экономь свои средства вместе с IGC заказывая с POIZON</h1>
+                    <p class='main__desc'>Курс на сегодня: 11.5 <br>Доставка: 2500 &#x20BD <br> Цена за 1кг: 650 &#x20BD</p>
+                    <a class="main__btn main__btn_gradient" id="orderBtn" href="#">Сделать заказ</a>
+                    <div class="modal" id="modalOrder">
+                        <div class="modal__content">
+                            <div class="modal__header">
+                                <h3 class="modal__title">Сделать заказ</h3>
+                                <a class="modal__close" id="closeOrderBtn">X</a>
+                            </div>
+                            <div class="modal__body">
+                                <p>Для связи с нами Вы можете использовать следующие социальные сети:</p>
+                                <div class="modal__social-links">
+                                    <a href="https://www.instagram.com/your_instagram_page" target="_blank">Instagram</a>
+                                    <a href="https://vk.com/your_vk_page" target="_blank">VK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <script src="./script/order.js"></script>
+                    <a class="main__btn" id="calculatePriceBtn" href="#">Рассчитать цену</a>
+
+                    <div class="modalPrice" id="modalPrice">
+                        <div class="modalPrice__content">
+                            <div class="modalPrice__header">
+                                <h3 class="modalPrice__title">Расчет цены без учета веса</h3>
+                                <a href="" class="modalPrice__close">&times;</a>
+                            </div>
+                            <div class="modalPrice__body">
+                                <input class="modalPrice__input" type="number" id="priceInput" placeholder="Введите цену">
+                                <p class="modalPrice__result" id="priceResult"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <script src='./script/price.js'></script>
+
+
+
+
+
+                    <ul class="main__list">
+                        <li class="main__item"><span class="main__span">1k+</span>выполненых заказов</li>
+                        <li class="main__item"><span class="main__span">500+</span>отзывов</li>
+                        <li class="main__item"><span class="main__span">100+</span>постоянных клиентов</li>
+                    </ul>
+                </div>
+                <div class="main__video"><img class="main__vid" src="./images/unnamed.gif" alt=""></div>
+            </div>
+
+
+
+        </section>
+        <section>
+            <h2 class="title">Вы сможете:</h2>
+            <p class="desc">Заказать любые вещи и технику намного дешевле, чем они стоят в России</p>
+            <div class="card">
+                <div class="card__item">
+                    <div class="card__cover">
+                        <img class="card__img" src="./images/photo1.png" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <p class="card__nick">IGC</p>
+                            <p class="card__author">Nike Grateful Dead </p>
+                        </div>
+                        <p class="card__bid">price<span class="card__price">49000&#x20BD</span></p>
+                    </div>
+                    <a href="#" class="card__link">Купить</a>
+                </div>
+                <div class="card__item">
+                    <div class="card__cover">
+                        <img class="card__img" src="./images/photo2.png" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <p class="card__nick">IGC</p>
+                            <p class="card__author">Gucci Basket</p>
+                        </div>
+                        <p class="card__bid">price<span class="card__price">47500&#x20BD</span></p>
+                    </div>
+                    <a href="#" class="card__link">Купить</a>
+                </div>
+                <div class="card__item">
+                    <div class="card__cover">
+                        <img class="card__img" src="./images/photo3.png" alt="">
+                    </div>
+                    <div class="card__info">
+                        <div>
+                            <p class="card__nick">IGC</p>
+                            <p class="card__author">Stone island FW22</p>
+                        </div>
+                        <p class="card__bid">price<span class="card__price">24000&#x20BD</span></p>
+                    </div>
+                    <a href="#" class="card__link modal-open" data-modal-open="modal-1">Купить</a>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section>
+        <h2 class="title">Часто задаваемые вопросы</h2>
+        <p class="desc">Хотите что то спросить?</p>
+        <div class="faq">
+            <div class="faq__item">
+                <button class="collapsible">Как происходит оплата ?</button>
+                <div class="content">
+                    <p>Все просто, мы принимаем как сбер, так и тинькофф.</p>
+                </div>
+                <button class="collapsible">Как я могу доверять предоплате?</button>
+                <div class="content">
+                    <p>Мы делаем исключительно закуп вашего товара за ваши деньги, мы собирали <br> много времени нашу аудиторию и постоянных клиентов <br> чтобы помогать всем</p>
+                </div>
+                <button class="collapsible">Почему я должен выбрать именно вас?</button>
+                <div class="content">
+                    <p>Мы даем самый низкий курс на ру рынке, не накручивая его <br> как это делают остальные логисты</p>
+                </div>
+            </div>
+            <div class="faq__item">
+                <button class="collapsible">Что делать если я живу не в Москве?</button>
+                <div class="content">
+                    <p>Мы предоставляем доставку по всей России, поэтому как мы ее получим в <br> Москве, так сразу же отправляем ее сдэком к нашим клиентам</p>
+                </div>
+                <button class="collapsible">Сколько длится доставка?</button>
+                <div class="content">
+                    <p>Доствка длится от 14 до 25 дней, на самом деле время быстро пролетит</p>
+                </div>
+                <button class="collapsible">Как с вами связаться</button>
+                <div class="content">
+                    <p>Все контакты мы указали на сайте, а так же позвонить по номеру телефона!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="banner">
+            <h3 class="banner__title">Готовы что то заказать?</h3>
+            <a href="#" class="banner__link">Начнем!</a>
+        </div>
+    </footer>
+</body>
+
+</html>
